@@ -1,0 +1,68 @@
+[       4ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. # @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318
+[      19ms] Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <Primitive.div dir="ltr" data-orientation="horizontal" data-slot="tabs" className="group/tabs..." ref={null}>
+      <div dir="ltr" data-orientation="horizontal" data-slot="tabs" className="group/tabs..." ref={null}>
+        <TabsList>
+        <TabsContent value="responsive" className="mt-6">
+          <TabsContent data-slot="tabs-content" className="flex-1 tex..." value="responsive">
+            <Presence present={true}>
+              <Primitive.div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
+                <div data-state="active" data-orientation="horizontal" role="tabpanel" aria-labelledby="radix-_R_l..." ...>
+                  <BreakpointDemo>
+                    <Card>
+                      <div data-slot="card" data-size="default" className={"group/ca..."}>
+                        <CardHeader>
+                        <CardContent className="space-y-6">
+                          <div data-slot="card-content" className="px-4 group...">
+                            <p>
+                            <div className="grid grid-...">
+                              <div>
+                              <div className="p-4 border...">
+                                <p>
+                                <Badge variant="default">
+                                  <span
+                                    data-slot="badge"
++                                   data-variant="default"
+-                                   data-variant="outline"
++                                   className={"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-cente..."}
+-                                   className={"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-cente..."}
+                                  >
++                                   활성
+-                                   비활성
+                              ...
+                            ...
+        ...
+
+    at throwOnHydrationMismatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at prepareToHydrateHostInstance (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3372:23)
+    at completeWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6922:60)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at completeUnitOfWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+[      55ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. # @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318
+[     177ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     201ms] [LOG] [Fast Refresh] done in 127ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     282ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     301ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     391ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. # @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318
+[     456ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. # @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318
+[     478ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. # @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318
+[    1633ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. # @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318
+[    1672ms] [ERROR] Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. # @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318

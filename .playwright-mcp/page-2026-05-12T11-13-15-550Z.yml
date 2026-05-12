@@ -1,0 +1,250 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "StarterKit" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - generic [ref=e10]: StarterKit
+        - navigation [ref=e11]:
+          - link "대시보드" [ref=e12] [cursor=pointer]:
+            - /url: /
+            - button "대시보드" [ref=e13]
+          - link "컴포넌트" [ref=e14] [cursor=pointer]:
+            - /url: /components
+            - button "컴포넌트" [ref=e15]
+          - link "폼 예제" [ref=e16] [cursor=pointer]:
+            - /url: /forms
+            - button "폼 예제" [ref=e17]
+          - link "훅 라이브러리" [ref=e18] [cursor=pointer]:
+            - /url: /hooks
+            - button "훅 라이브러리" [ref=e19]
+          - link "예제" [ref=e20] [cursor=pointer]:
+            - /url: /examples
+            - button "예제" [ref=e21]
+        - button "사용자" [ref=e24]
+    - generic [ref=e25]:
+      - complementary [ref=e26]:
+        - navigation [ref=e27]:
+          - generic [ref=e28]:
+            - paragraph [ref=e29]: 메인
+            - generic [ref=e30]:
+              - link "대시보드" [ref=e31] [cursor=pointer]:
+                - /url: /
+                - button "대시보드" [ref=e32]:
+                  - generic [ref=e33]:
+                    - img
+                  - generic [ref=e34]: 대시보드
+              - link "컴포넌트" [ref=e35] [cursor=pointer]:
+                - /url: /components
+                - button "컴포넌트" [ref=e36]:
+                  - generic [ref=e37]:
+                    - img
+                  - generic [ref=e38]: 컴포넌트
+              - link "폼 예제" [ref=e39] [cursor=pointer]:
+                - /url: /forms
+                - button "폼 예제" [ref=e40]:
+                  - generic [ref=e41]:
+                    - img
+                  - generic [ref=e42]: 폼 예제
+              - link "훅 라이브러리" [ref=e43] [cursor=pointer]:
+                - /url: /hooks
+                - button "훅 라이브러리" [ref=e44]:
+                  - generic [ref=e45]:
+                    - img
+                  - generic [ref=e46]: 훅 라이브러리
+              - link "전체 예제" [ref=e47] [cursor=pointer]:
+                - /url: /examples
+                - button "전체 예제" [ref=e48]:
+                  - generic [ref=e49]:
+                    - img
+                  - generic [ref=e50]: 전체 예제
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: 기타
+            - generic [ref=e53]:
+              - link "설정" [ref=e54] [cursor=pointer]:
+                - /url: "#"
+                - button "설정" [ref=e55]:
+                  - generic [ref=e56]:
+                    - img
+                  - generic [ref=e57]: 설정
+              - link "도움말" [ref=e58] [cursor=pointer]:
+                - /url: "#"
+                - button "도움말" [ref=e59]:
+                  - generic [ref=e60]:
+                    - img
+                  - generic [ref=e61]: 도움말
+      - main [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - heading "대시보드" [level=1] [ref=e65]
+            - paragraph [ref=e66]: 프로젝트 현황을 한눈에 확인하세요.
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - generic [ref=e69]:
+                - generic [ref=e70]: 총 방문자
+                - img [ref=e72]
+              - generic [ref=e77]:
+                - generic [ref=e78]: 12,543
+                - paragraph [ref=e79]:
+                  - generic [ref=e80]:
+                    - img [ref=e81]
+                    - text: +12.5%
+                  - text: 지난 달 대비
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - generic [ref=e86]: 활성 프로젝트
+                - img [ref=e88]
+              - generic [ref=e92]:
+                - generic [ref=e93]: "24"
+                - paragraph [ref=e94]:
+                  - generic [ref=e95]:
+                    - img [ref=e96]
+                    - text: "-3.2%"
+                  - text: 지난 달 대비
+            - generic [ref=e99]:
+              - generic [ref=e100]:
+                - generic [ref=e101]: 완료율
+                - img [ref=e103]
+              - generic [ref=e106]:
+                - generic [ref=e107]: 78%
+                - paragraph [ref=e108]:
+                  - generic [ref=e109]:
+                    - img [ref=e110]
+                    - text: +5.1%
+                  - text: 지난 달 대비
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - generic [ref=e115]: 수익
+                - img [ref=e117]
+              - generic [ref=e120]:
+                - generic [ref=e121]: ₩2.4M
+                - paragraph [ref=e122]:
+                  - generic [ref=e123]:
+                    - img [ref=e124]
+                    - text: +18.7%
+                  - text: 지난 달 대비
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - generic [ref=e130]: 최근 활동
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - generic [ref=e135]: KC
+                  - generic [ref=e136]:
+                    - paragraph [ref=e137]: 김철수 생성함
+                    - paragraph [ref=e138]: 새로운 프로젝트
+                    - generic [ref=e139]:
+                      - generic [ref=e140]: 생성
+                      - generic [ref=e141]: 2시간 전
+                - generic [ref=e142]:
+                  - generic [ref=e144]: LY
+                  - generic [ref=e145]:
+                    - paragraph [ref=e146]: 이영희 수정함
+                    - paragraph [ref=e147]: Dashboard
+                    - generic [ref=e148]:
+                      - generic [ref=e149]: 수정
+                      - generic [ref=e150]: 4시간 전
+                - generic [ref=e151]:
+                  - generic [ref=e153]: PM
+                  - generic [ref=e154]:
+                    - paragraph [ref=e155]: 박민준 삭제함
+                    - paragraph [ref=e156]: 구 설정파일
+                    - generic [ref=e157]:
+                      - generic [ref=e158]: 삭제
+                      - generic [ref=e159]: 1일 전
+                - generic [ref=e160]:
+                  - generic [ref=e162]: CS
+                  - generic [ref=e163]:
+                    - paragraph [ref=e164]: 최수진 댓글
+                    - paragraph [ref=e165]: "Issue #42"
+                    - generic [ref=e166]:
+                      - generic [ref=e167]: 댓글
+                      - generic [ref=e168]: 2일 전
+            - generic [ref=e169]:
+              - generic [ref=e171]: 최근 프로젝트
+              - table [ref=e174]:
+                - rowgroup [ref=e175]:
+                  - row "프로젝트 분류 상태 진행도 생성일" [ref=e176]:
+                    - columnheader "프로젝트" [ref=e177]
+                    - columnheader "분류" [ref=e178]
+                    - columnheader "상태" [ref=e179]
+                    - columnheader "진행도" [ref=e180]
+                    - columnheader "생성일" [ref=e181]
+                - rowgroup [ref=e182]:
+                  - row "웹사이트 개선 개발 진행 중 2025-05-10" [ref=e183]:
+                    - cell "웹사이트 개선" [ref=e184]
+                    - cell "개발" [ref=e185]
+                    - cell "진행 중" [ref=e186]:
+                      - generic [ref=e187]: 진행 중
+                    - cell [ref=e188]:
+                      - progressbar [ref=e189]
+                    - cell "2025-05-10" [ref=e191]
+                  - row "모바일 앱 출시 마케팅 대기 중 2025-05-08" [ref=e192]:
+                    - cell "모바일 앱 출시" [ref=e193]
+                    - cell "마케팅" [ref=e194]
+                    - cell "대기 중" [ref=e195]:
+                      - generic [ref=e196]: 대기 중
+                    - cell [ref=e197]:
+                      - progressbar [ref=e198]
+                    - cell "2025-05-08" [ref=e200]
+                  - row "데이터베이스 최적화 인프라 진행 중 2025-05-05" [ref=e201]:
+                    - cell "데이터베이스 최적화" [ref=e202]
+                    - cell "인프라" [ref=e203]
+                    - cell "진행 중" [ref=e204]:
+                      - generic [ref=e205]: 진행 중
+                    - cell [ref=e206]:
+                      - progressbar [ref=e207]
+                    - cell "2025-05-05" [ref=e209]
+                  - row "레거시 시스템 통합 개발 완료 2025-04-28" [ref=e210]:
+                    - cell "레거시 시스템 통합" [ref=e211]
+                    - cell "개발" [ref=e212]
+                    - cell "완료" [ref=e213]:
+                      - generic [ref=e214]: 완료
+                    - cell [ref=e215]:
+                      - progressbar [ref=e216]
+                    - cell "2025-04-28" [ref=e218]
+          - generic [ref=e219]:
+            - heading "빠른 탐색" [level=2] [ref=e220]
+            - generic [ref=e221]:
+              - generic [ref=e222]:
+                - generic [ref=e223]:
+                  - generic [ref=e224]:
+                    - heading "모든 컴포넌트" [level=3] [ref=e225]
+                    - paragraph [ref=e226]: shadcn/ui와 커스텀 컴포넌트 쇼케이스
+                  - img [ref=e227]
+                - link "보러가기" [ref=e231] [cursor=pointer]:
+                  - /url: /components
+                  - text: 보러가기
+                  - img
+              - generic [ref=e232]:
+                - generic [ref=e233]:
+                  - generic [ref=e234]:
+                    - heading "폼 예제" [level=3] [ref=e235]
+                    - paragraph [ref=e236]: 입력 요소와 폼 레이아웃 패턴
+                  - img [ref=e237]
+                - link "보러가기" [ref=e240] [cursor=pointer]:
+                  - /url: /forms
+                  - text: 보러가기
+                  - img
+              - generic [ref=e241]:
+                - generic [ref=e242]:
+                  - generic [ref=e243]:
+                    - heading "훅 라이브러리" [level=3] [ref=e244]
+                    - paragraph [ref=e245]: React 훅 라이브러리 실습
+                  - img [ref=e246]
+                - link "보러가기" [ref=e249] [cursor=pointer]:
+                  - /url: /hooks
+                  - text: 보러가기
+                  - img
+    - contentinfo [ref=e250]:
+      - generic [ref=e251]:
+        - paragraph [ref=e253]: © 2026 StarterKit. Next.js 16 + shadcn/ui
+        - navigation [ref=e254]:
+          - link "컴포넌트" [ref=e255] [cursor=pointer]:
+            - /url: /components
+          - link "폼 예제" [ref=e256] [cursor=pointer]:
+            - /url: /forms
+          - link "훅 라이브러리" [ref=e257] [cursor=pointer]:
+            - /url: /hooks
+  - button "Open Next.js Dev Tools" [ref=e263] [cursor=pointer]:
+    - img [ref=e264]

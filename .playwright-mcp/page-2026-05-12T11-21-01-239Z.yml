@@ -1,0 +1,101 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "StarterKit" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - generic [ref=e10]: StarterKit
+        - navigation [ref=e11]:
+          - link "대시보드" [ref=e12] [cursor=pointer]:
+            - /url: /
+            - button "대시보드" [ref=e13]
+          - link "컴포넌트" [ref=e14] [cursor=pointer]:
+            - /url: /components
+            - button "컴포넌트" [ref=e15]
+          - link "폼 예제" [ref=e16] [cursor=pointer]:
+            - /url: /forms
+            - button "폼 예제" [ref=e17]
+          - link "훅 라이브러리" [ref=e18] [cursor=pointer]:
+            - /url: /hooks
+            - button "훅 라이브러리" [ref=e19]
+          - link "예제" [ref=e20] [cursor=pointer]:
+            - /url: /examples
+            - button "예제" [ref=e21]
+        - button "사용자" [ref=e24]
+    - generic [ref=e25]:
+      - complementary [ref=e26]:
+        - navigation [ref=e27]:
+          - generic [ref=e28]:
+            - paragraph [ref=e29]: 메인
+            - generic [ref=e30]:
+              - link "대시보드" [ref=e31] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e32]:
+                  - img
+                - generic [ref=e33]: 대시보드
+              - link "컴포넌트" [ref=e34] [cursor=pointer]:
+                - /url: /components
+                - generic [ref=e35]:
+                  - img
+                - generic [ref=e36]: 컴포넌트
+              - link "폼 예제" [ref=e37] [cursor=pointer]:
+                - /url: /forms
+                - generic [ref=e38]:
+                  - img
+                - generic [ref=e39]: 폼 예제
+              - link "훅 라이브러리" [ref=e40] [cursor=pointer]:
+                - /url: /hooks
+                - generic [ref=e41]:
+                  - img
+                - generic [ref=e42]: 훅 라이브러리
+              - link "전체 예제" [ref=e43] [cursor=pointer]:
+                - /url: /examples
+                - generic [ref=e44]:
+                  - img
+                - generic [ref=e45]: 전체 예제
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: 기타
+            - generic [ref=e48]:
+              - link "설정" [ref=e49] [cursor=pointer]:
+                - /url: /settings
+                - generic [ref=e50]:
+                  - img
+                - generic [ref=e51]: 설정
+              - link "도움말" [ref=e52] [cursor=pointer]:
+                - /url: /help
+                - generic [ref=e53]:
+                  - img
+                - generic [ref=e54]: 도움말
+      - main [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - heading "훅 라이브러리" [level=1] [ref=e58]
+            - paragraph [ref=e59]: React 훅 라이브러리들을 실습해봅시다.
+          - generic [ref=e60]:
+            - tablist [ref=e61]:
+              - tab "react-responsive" [selected] [ref=e62]
+              - tab "use-local-storage-state" [ref=e63]
+              - tab "usehooks-ts" [ref=e64]
+            - tabpanel "react-responsive" [ref=e65]:
+              - generic [ref=e66]:
+                - generic [ref=e68]: "react-responsive: 반응형 브레이크포인트"
+                - generic [ref=e69]:
+                  - paragraph [ref=e70]: 창 크기를 조정해보세요. 현재 브레이크포인트가 실시간으로 업데이트됩니다.
+                  - generic [ref=e71]:
+                    - paragraph [ref=e73]: 로딩 중...
+                    - paragraph [ref=e75]: 로딩 중...
+                    - paragraph [ref=e77]: 로딩 중...
+                    - paragraph [ref=e79]: 로딩 중...
+    - contentinfo [ref=e80]:
+      - generic [ref=e81]:
+        - paragraph [ref=e83]: © 2026 StarterKit. Next.js 16 + shadcn/ui
+        - navigation [ref=e84]:
+          - link "컴포넌트" [ref=e85] [cursor=pointer]:
+            - /url: /components
+          - link "폼 예제" [ref=e86] [cursor=pointer]:
+            - /url: /forms
+          - link "훅 라이브러리" [ref=e87] [cursor=pointer]:
+            - /url: /hooks
+  - button "Open Next.js Dev Tools" [ref=e93] [cursor=pointer]:
+    - img [ref=e94]

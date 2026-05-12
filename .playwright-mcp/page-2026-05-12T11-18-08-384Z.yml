@@ -1,0 +1,127 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "StarterKit" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - generic [ref=e10]: StarterKit
+        - navigation [ref=e11]:
+          - link "대시보드" [ref=e12] [cursor=pointer]:
+            - /url: /
+            - button "대시보드" [ref=e13]
+          - link "컴포넌트" [ref=e14] [cursor=pointer]:
+            - /url: /components
+            - button "컴포넌트" [ref=e15]
+          - link "폼 예제" [ref=e16] [cursor=pointer]:
+            - /url: /forms
+            - button "폼 예제" [ref=e17]
+          - link "훅 라이브러리" [ref=e18] [cursor=pointer]:
+            - /url: /hooks
+            - button "훅 라이브러리" [ref=e19]
+          - link "예제" [ref=e20] [cursor=pointer]:
+            - /url: /examples
+            - button "예제" [ref=e21]
+        - button "사용자" [ref=e24]
+    - generic [ref=e25]:
+      - complementary [ref=e26]:
+        - navigation [ref=e27]:
+          - generic [ref=e28]:
+            - paragraph [ref=e29]: 메인
+            - generic [ref=e30]:
+              - link "대시보드" [ref=e31] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e32]:
+                  - img
+                - generic [ref=e33]: 대시보드
+              - link "컴포넌트" [ref=e34] [cursor=pointer]:
+                - /url: /components
+                - generic [ref=e35]:
+                  - img
+                - generic [ref=e36]: 컴포넌트
+              - link "폼 예제" [ref=e37] [cursor=pointer]:
+                - /url: /forms
+                - generic [ref=e38]:
+                  - img
+                - generic [ref=e39]: 폼 예제
+              - link "훅 라이브러리" [ref=e40] [cursor=pointer]:
+                - /url: /hooks
+                - generic [ref=e41]:
+                  - img
+                - generic [ref=e42]: 훅 라이브러리
+              - link "전체 예제" [ref=e43] [cursor=pointer]:
+                - /url: /examples
+                - generic [ref=e44]:
+                  - img
+                - generic [ref=e45]: 전체 예제
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: 기타
+            - generic [ref=e48]:
+              - link "설정" [ref=e49] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e50]:
+                  - img
+                - generic [ref=e51]: 설정
+              - link "도움말" [ref=e52] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e53]:
+                  - img
+                - generic [ref=e54]: 도움말
+      - main [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - heading "컴포넌트 쇼케이스" [level=1] [ref=e58]
+            - paragraph [ref=e59]: shadcn/ui와 커스텀 컴포넌트 라이브러리입니다.
+          - generic [ref=e60]:
+            - tablist [ref=e61]:
+              - tab "기본" [selected] [ref=e62]
+              - tab "데이터" [ref=e63]
+              - tab "피드백" [ref=e64]
+            - tabpanel "기본" [ref=e65]:
+              - generic [ref=e66]:
+                - heading "버튼" [level=2] [ref=e67]
+                - generic [ref=e69]:
+                  - button "기본" [ref=e70]
+                  - button "보조" [ref=e71]
+                  - button "외곽선" [ref=e72]
+                  - button "고스트" [ref=e73]
+                  - button "위험" [ref=e74]
+                  - button "링크" [ref=e75]
+              - generic [ref=e76]:
+                - heading "버튼 사이즈" [level=2] [ref=e77]
+                - generic [ref=e79]:
+                  - button "XS" [ref=e80]
+                  - button "Small" [ref=e81]
+                  - button "Default" [ref=e82]
+                  - button "Large" [ref=e83]
+              - generic [ref=e84]:
+                - heading "배지" [level=2] [ref=e85]
+                - generic [ref=e87]:
+                  - generic [ref=e88]: 기본
+                  - generic [ref=e89]: 보조
+                  - generic [ref=e90]: 외곽선
+                  - generic [ref=e91]: 위험
+              - generic [ref=e92]:
+                - heading "아바타" [level=2] [ref=e93]
+                - generic [ref=e95]:
+                  - generic [ref=e97]: KH
+                  - generic [ref=e99]: SC
+              - generic [ref=e100]:
+                - heading "구분선" [level=2] [ref=e101]
+                - generic [ref=e103]:
+                  - generic [ref=e104]: "수평 구분선:"
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: "수직 구분선:"
+                    - generic [ref=e107]: 여기
+    - contentinfo [ref=e108]:
+      - generic [ref=e109]:
+        - paragraph [ref=e111]: © 2026 StarterKit. Next.js 16 + shadcn/ui
+        - navigation [ref=e112]:
+          - link "컴포넌트" [ref=e113] [cursor=pointer]:
+            - /url: /components
+          - link "폼 예제" [ref=e114] [cursor=pointer]:
+            - /url: /forms
+          - link "훅 라이브러리" [ref=e115] [cursor=pointer]:
+            - /url: /hooks
+  - button "Open Next.js Dev Tools" [ref=e121] [cursor=pointer]:
+    - img [ref=e122]
