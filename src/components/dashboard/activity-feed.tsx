@@ -46,7 +46,7 @@ const ACTIVITIES: ActivityItem[] = [
   },
   {
     id: '4',
-    user: { name: '최수진', initials: 'CS' },
+    user: { name: '최수현', initials: 'CS' },
     action: '댓글',
     target: 'Issue #42',
     time: '2일 전',
