@@ -1,0 +1,1 @@
+- [StarterKit 프로젝트 정보](project-starterkit.md) — Next.js 16 스타터킷의 구성, 반복 이슈 패턴, 의존성

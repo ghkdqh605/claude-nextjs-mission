@@ -5,7 +5,8 @@
       "WebFetch",
       "Bash",
       "mcp__playwright",
-      "PowerShell(Get-ChildItem \"E:\\\\developer\\\\claudeCode\\\\workspace\\\\claude-nextjs-mission\\\\node_modules\\\\next\\\\dist\\\\docs\" -Recurse -Directory | Select-Object -ExpandProperty FullName | ForEach-Object { $_.Replace\\(\"E:\\\\developer\\\\claudeCode\\\\workspace\\\\claude-nextjs-mission\\\\node_modules\\\\next\\\\dist\\\\docs\\\\\", \"\"\\) })"
+      "PowerShell(Get-ChildItem \"E:\\\\developer\\\\claudeCode\\\\workspace\\\\claude-nextjs-mission\\\\node_modules\\\\next\\\\dist\\\\docs\" -Recurse -Directory | Select-Object -ExpandProperty FullName | ForEach-Object { $_.Replace\\(\"E:\\\\developer\\\\claudeCode\\\\workspace\\\\claude-nextjs-mission\\\\node_modules\\\\next\\\\dist\\\\docs\\\\\", \"\"\\) })",
+      "Skill(git:commit)"
     ]
   },
   "enableAllProjectMcpServers": true,
