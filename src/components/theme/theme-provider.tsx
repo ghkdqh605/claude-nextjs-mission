@@ -1,6 +1,6 @@
 'use client'
 
-import React, { createContext, useContext, useEffect, useState } from 'react'
+import React, { createContext, useContext, useEffect, useState, useCallback } from 'react'
 import useLocalStorageState from 'use-local-storage-state'
 
 type Theme = 'light' | 'dark' | 'system'
@@ -22,7 +22,6 @@ export function ThemeProvider({
   defaultTheme?: Theme
   storageKey?: string
 }) {
-  const [mounted, setMounted] = useState(false)
   const [theme, setThemeState] = useLocalStorageState<Theme>(storageKey, {
     defaultValue: defaultTheme,
     defaultServerValue: defaultTheme,
@@ -31,8 +30,6 @@ export function ThemeProvider({
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
-    setMounted(true)
-
     const root = document.documentElement
     const handleThemeChange = () => {
       const isDarkMode =
@@ -57,16 +54,16 @@ export function ThemeProvider({
     return () => mediaQuery.removeEventListener('change', handleThemeChange)
   }, [theme])
 
-  const setTheme = (newTheme: Theme) => {
+  const setTheme = useCallback((newTheme: Theme) => {
     setThemeState(newTheme)
-  }
+  }, [setThemeState])
 
   return (
     <ThemeContext.Provider
       value={{
-        theme: mounted ? theme : defaultTheme,
+        theme,
         setTheme,
-        isDark: mounted ? isDark : false,
+        isDark,
       }}
     >
       {children}

@@ -1,40 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import { useBreakpoint } from '@/hooks/use-breakpoint'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 
 export function BreakpointDemo() {
-  const [mounted, setMounted] = useState(false)
   const { isMobile, isTablet, isDesktop, isLargeDesktop, current } =
     useBreakpoint()
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return (
-      <Card>
-        <CardHeader>
-          <CardTitle>react-responsive: 반응형 브레이크포인트</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-6">
-          <p className="text-sm text-muted-foreground">
-            창 크기를 조정해보세요. 현재 브레이크포인트가 실시간으로 업데이트됩니다.
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="p-4 border rounded-lg">
-                <p className="text-sm text-muted-foreground mb-2">로딩 중...</p>
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-    )
-  }
 
   return (
     <Card>

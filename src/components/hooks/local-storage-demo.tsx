@@ -61,7 +61,7 @@ export function LocalStorageDemo() {
             placeholder="할일을 입력하세요..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            onKeyPress={(e) => {
+            onKeyDown={(e) => {
               if (e.key === 'Enter') addTodo()
             }}
           />

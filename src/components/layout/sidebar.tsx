@@ -7,6 +7,7 @@ import { Separator } from '@/components/ui/separator'
 import { cn } from '@/lib/utils'
 import { SIDEBAR_GROUPS } from '@/lib/constants'
 import * as Icons from 'lucide-react'
+import type { LucideProps } from 'lucide-react'
 
 interface SidebarProps {
   isOpen: boolean
@@ -15,13 +16,14 @@ interface SidebarProps {
 
 function getIcon(iconName: string): React.ReactNode {
   // lucide-react 아이콘 동적 가져오기
-  const IconComponent = (Icons as Record<string, any>)[iconName] as React.ComponentType<{ className?: string }> | undefined
+  const IconComponent = (Icons as Record<string, React.ComponentType<LucideProps> | unknown>)[iconName]
 
-  if (!IconComponent) {
+  if (!IconComponent || typeof IconComponent !== 'function') {
     return null
   }
 
-  return <IconComponent className="size-4" />
+  const Icon = IconComponent as React.ComponentType<LucideProps>
+  return <Icon className="size-4" />
 }
 
 function SidebarItem({
@@ -73,8 +75,8 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
         )}
       >
         <nav className="flex flex-col gap-2 p-3">
-          {SIDEBAR_GROUPS.map((group, idx) => (
-            <div key={idx}>
+          {SIDEBAR_GROUPS.map((group) => (
+            <div key={group.groupLabel}>
               <p className="text-xs font-medium text-muted-foreground px-2 py-2">
                 {group.groupLabel}
               </p>

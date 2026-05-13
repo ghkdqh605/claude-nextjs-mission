@@ -9,20 +9,9 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { Moon, Sun, Monitor } from 'lucide-react'
-import { useEffect, useState } from 'react'
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  // hydration 후에만 렌더
-  if (!mounted) {
-    return <div className="size-9" />
-  }
 
   const currentIcon =
     theme === 'dark' ? (

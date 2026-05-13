@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { ThemeToggle } from '@/components/theme/theme-toggle'
 import { Menu, X, Layers } from 'lucide-react'
-import { cn } from '@/lib/utils'
 import { NAV_ITEMS } from '@/lib/constants'
 
 interface HeaderProps {
