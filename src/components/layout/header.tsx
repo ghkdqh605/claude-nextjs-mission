@@ -57,9 +57,11 @@ export function Header({ onSidebarToggle, isSidebarOpen }: HeaderProps) {
         <div className="ml-auto flex items-center gap-2">
           <ThemeToggle />
           <Separator orientation="vertical" className="h-6" />
-          <Button variant="outline" size="sm">
-            사용자
-          </Button>
+          <Link href="/login">
+            <Button variant="outline" size="sm">
+              로그인
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
