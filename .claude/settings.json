@@ -1,0 +1,27 @@
+{
+    "hooks": {
+      "SessionStart": [
+        {
+          "matcher": "compact",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "echo '항상 한국어로 응답. npm 대신 bun 사용. 커밋 전 테스트 필수.'"
+            }
+          ]
+        }
+      ],
+      "PreToolUse": [
+        {
+          "matcher": "Bash",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "powershell.exe -NoProfile -NonInteractive -File \"${CLAUDE_PROJECT_DIR}\\.claude\\hooks\\dangerous-command-check.ps1\"",
+              "timeout": 10
+            }
+          ]
+        }
+      ]
+    }
+  }
