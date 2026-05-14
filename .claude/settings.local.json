@@ -6,7 +6,10 @@
       "Bash",
       "mcp__playwright",
       "PowerShell(Get-ChildItem \"E:\\\\developer\\\\claudeCode\\\\workspace\\\\claude-nextjs-mission\\\\node_modules\\\\next\\\\dist\\\\docs\" -Recurse -Directory | Select-Object -ExpandProperty FullName | ForEach-Object { $_.Replace\\(\"E:\\\\developer\\\\claudeCode\\\\workspace\\\\claude-nextjs-mission\\\\node_modules\\\\next\\\\dist\\\\docs\\\\\", \"\"\\) })",
-      "Skill(git:commit)"
+      "Skill(git:commit)",
+      "Read",
+      "mcp__sequential-thinking",
+      "mcp__shadcn"
     ]
   },
   "enableAllProjectMcpServers": true,
